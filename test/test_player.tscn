@@ -7,6 +7,7 @@
 size = Vector2(127, 126)
 
 [node name="Test_Player" type="CharacterBody2D"]
+scale = Vector2(0.132287, 0.138922)
 script = ExtResource("1_bom5g")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -15,3 +16,7 @@ texture = ExtResource("2_u8p0v")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, -1)
 shape = SubResource("RectangleShape2D_1x7gk")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(4, 4)
+position_smoothing_enabled = true
